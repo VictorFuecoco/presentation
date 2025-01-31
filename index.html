@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przyciski</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="main-btn" onclick="showSubButtons(1)">Przycisk 1</button>
+        <button class="main-btn" onclick="showSubButtons(2)">Przycisk 2</button>
+        <button class="main-btn" onclick="showSubButtons(3)">Przycisk 3</button>
+
+        <div id="sub-buttons-1" class="sub-buttons">
+            <button onclick="showInstructions(1)">Opcja 1A</button>
+            <button onclick="showInstructions(2)">Opcja 1B</button>
+        </div>
+        <div id="sub-buttons-2" class="sub-buttons">
+            <button onclick="showInstructions(3)">Opcja 2A</button>
+            <button onclick="showInstructions(4)">Opcja 2B</button>
+        </div>
+        <div id="sub-buttons-3" class="sub-buttons">
+            <button onclick="showInstructions(5)">Opcja 3A</button>
+            <button onclick="showInstructions(6)">Opcja 3B</button>
+        </div>
+
+        <p id="instructions"></p>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
